@@ -1,0 +1,95 @@
+:root {
+	--light-cyan: hsl(193, 38%, 86%);
+	--neon-green: hsl(150, 100%, 66%);
+	--gray-blue: hsl(217, 19%, 38%);
+	--dark-gray-blue: hsl(217, 19%, 24%);
+	--dark-blue: hsl(218, 23%, 16%);
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-family: 'Manrope', sans-serif;
+}
+
+body {
+	background-color: var(--dark-blue);
+}
+
+main {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	min-width: 22rem;
+	min-height: 20rem;
+	padding: 1rem 1rem 0 1rem;
+	border-radius: 0.5rem;
+	background-color: var(--dark-gray-blue);
+}
+
+.card p:first-child {
+	letter-spacing: 0.2rem;
+	font-size: 0.8rem;
+	padding: 1rem;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--neon-green);
+}
+.advice-text {
+	text-align: center;
+	font-size: 1.75rem;
+	width: 19rem;
+	color: var(--light-cyan);
+}
+
+picture {
+	margin-top: 2rem;
+}
+.dice {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translateY(2.2rem);
+	padding: 1.25rem;
+	border-radius: 50%;
+	border:none;
+	cursor: pointer;
+	background-color: var(--neon-green);
+	transition: box-shadow .3s;
+}
+
+.dice:hover {
+	box-shadow: 0 0 2rem var(--neon-green);
+}
+
+.attribution {
+	margin-top: 20px;
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 567px) {
+	.card {
+		padding: 1rem 3rem 0 3rem;
+		border-radius: 1rem;
+	}
+	.advice-text {
+		width: 25rem;
+	}
+}
