@@ -1,3 +1,3 @@
 # Frontend Mentor - Advice generator app
 
-live:demo
+live demo:https://shaymoun.github.io/Advice-generator-app/
